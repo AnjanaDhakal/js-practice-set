@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title> Date</title>
+</head>
+<body>
+    <div id="date"></div>
+   <!-- <div class="container">
+    <div class="title">
+        <h1>WELCOME</h1>
+    </div>
+    <div class="num">
+        <p>random number is:<span>2</span></p>
+        <p>your number is:<span>5</span></p>
+    </div>
+    <div class="btn">
+        <button>Failed</button>
+    </div>
+    <div class="btn1">
+        <button>Try Again</button>
+    </div>
+   </div> -->
+   <script>
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const day = new Date();
+const d = weekday[day.getDay()];
+document.getElementById("date").innerHTML= d;
+   </script>
+</body>
+</html>

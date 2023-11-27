@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check whether the given two integer in the range of 50-90</title>
+  </head>
+  <body>
+    <label>1st Number</label>
+    <input type="number" id="n1" /><br />
+    <label>2nd Number</label>
+    <input type="number" id="n2" /><br />
+    <input type="button" onclick="result()" value="Click Me" />
+    <div id="result"></div>
+    <script>
+      function result() {
+        let num1 = document.getElementById("n1").value;
+        let num2 = document.getElementById("n2").value;
+        if ((num1 >= 50 && num1 <= 90) || (num2 >= 50 && num2 <= 90)) {
+          document.getElementById("result").innerHTML = "true";
+        } else {
+          document.getElementById("result").innerHTML = "false";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature</title>
+  </head>
+  <body>
+    <div id="ferenhite"></div>
+    <div id="celsius"></div>
+    <script>
+      const t = 60;
+      const temp = (t * 9) / 5 + 32;
+      document.getElementById("ferenhite").innerHTML = "60\xB0F is: "+temp+"\xB0C";
+      const t2 = 45;
+      const temp2 = (t2 - 32) * 5 / 9;
+      document.getElementById("celsius").innerHTML = "45\xB0C is: "+temp2+"\xB0F";
+    </script>
+  </body>
+</html>

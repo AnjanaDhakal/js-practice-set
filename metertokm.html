@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert meter to km</title>
+</head>
+<body>
+    <form>
+        <label>Enter the meter you wants to convert</label>
+        <input type="number" id="num1"><br>
+        <input type="button" onclick="result(document.getElementById('num1').value)"value="Convert into KM">
+        <input type="button" onclick="result2(document.getElementById('num1').value)" value="Convert into Mile">
+    </form>
+    <div id="result"></div>
+    <script>
+       function result( n1 ) {
+        km = n1/1000;
+           document.getElementById("result").innerHTML = km + " is the converted KM value of "+n1+ "meter." ;
+        }
+       function result2( n1){
+        mile = n1/1609.344;
+        document.getElementById("result").innerHTML = mile + " is the converted KM value of "+n1+ "meter." ;
+       }
+    </script>
+</body>
+</html>

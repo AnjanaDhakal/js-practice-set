@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>negative number and positive number</title>
+  </head>
+  <body>
+    <form>
+      <label>1st number</label>
+      <input type="number" id="n1" /><br />
+      <label>2nd number</label>
+      <input type="number" id="n2" /><br />
+      <input type="button" onclick="result()" value="Check" />
+    </form>
+    <div id="results"></div>
+    <script>
+      function result() {
+        let a = document.getElementById("n1").value;
+    
+        let b = document.getElementById("n2").value;
+      
+        if (a > 0 || b > 0) {
+          document.getElementById("results").innerHTML = "Positive";
+         
+        } else {
+          document.getElementById("results").innerHTML ="Negative";
+         
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>leap year</title>
+  </head>
+  <body>
+    <input id="yearInput" type="number" /> <!-- added an id attribute to the input element -->
+    <button onclick="number()">ok</button> <!-- changed submit to button and fixed typo in function name -->
+    <h1 id="year"></h1>
+    <script>
+      function number() {
+        const year = document.getElementById("yearInput").value; // retrieve the input value
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) { // corrected the condition
+          document.getElementById("year").innerHTML = "It's a leap year";
+        } else {
+          document.getElementById("year").innerHTML = "It's not a leap year"; // corrected the message
+        }
+      }
+    </script>
+  </body>
+</html>

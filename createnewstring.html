@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create string fron given</title>
+  </head>
+  <body>
+    <form>
+      <label>Enter any String value</label>
+      <input type="text" id="string" /><br />
+      <input type="button" value="Click Me" onclick="result()" />
+    </form>
+    <div id="result"></div>
+    <script>
+        function result(){
+     const a = document.getElementById("string").value;
+     if(a.length>3){
+      let pos = a.length-3;
+      let b = a.substring(pos)
+       str = b + a + b;
+       document.getElementById("result").innerHTML = str  
+     }
+     else{
+        document.getElementById("result").innerHTML = "plz enter string length more than 3"
+     }
+    }
+    </script>
+  </body>
+</html>

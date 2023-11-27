@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check the number is multiple of  3 or 7</title>
+</head>
+<body>
+    <form>
+        <label>Enter a positive number</label>
+        <input type="number" id="n1">
+        <input type="button" onclick="result()" value="Click Me">
+        <div id="results"></div>
+        <script>
+            function result(){
+                const a = document.getElementById("n1").value;
+               if(a>0 && a%3==0 ){
+                document.getElementById("results").innerHTML="multiple of 3 ";
+               }else if(a>0 &&  a%7==0){
+                document.getElementById("results").innerHTML="multiple of 7";
+               }
+               
+               else{
+                document.getElementById("results").innerHTML="not the multiple of 7 or 3";
+               }
+            }
+        </script>
+    </form>
+</body>
+</html>

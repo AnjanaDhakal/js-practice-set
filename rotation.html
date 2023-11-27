@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body onload="animate_string('target')">
+    <pre id="target">W3Resourse</pre>
+
+    <script type="text/javascript">
+      function animate_string(id) {
+        var element = document.getElementById(id);
+        var textNode = element.childNodes[0];
+        var text = textNode.data;
+
+        setInterval(function () {
+          text = text[text.length - 1] + text.substring(0, text.length - 1);
+          textNode.data = text;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

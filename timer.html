@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timer</title>
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <h1 id="demo"></h1>
+      <h1 id="demo1"></h1>
+    </div>
+
+    <script>
+      // settimer
+      var x = setInterval(function () {
+        //   get today date
+        const TDay = new Date().getTime();
+
+        // set the count time and date
+        const ToDate = new Date("Mar 7,2024 13:50:00").getTime();
+
+        // difference of time
+        const diff = ToDate - TDay;
+
+        // convert hrs,minute and second
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hrs = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const sec = Math.floor((diff % (1000 * 60)) / 1000);
+
+        const timer = days + "days" + hrs + "hrs" + min + "min" + sec + "sec";
+        document.getElementById("demo").innerHTML = diff;
+        document.getElementById("demo1").innerHTML = timer;
+        if(diff < 0){
+            document.getElementById("demo1").innerHTML = "HAPPY NEW YEAR";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <label>1st Number</label>
+    <input type="number" id="n1" /><br />
+    <label>2nd Number</label>
+    <input type="number" id="n2" /><br />
+    <label>3rd Number</label>
+    <input type="number" id="n3" /><br />
+    <input type="button" onclick="result()" value="Click Me" />
+  </form>
+    <div id="result"></div>
+    <script>
+  const between = (x, min, max) => {
+        return x >= min && x <= max;
+      }
+      // ...
+      const x = 0.002
+      if (between(x, 0.001, 0.009)) {
+        // something
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container{
+    margin:0 5rem;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15rem;
+}
+.num{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
